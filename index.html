@@ -1,10 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-<a href="C:\Users\Administrator\Desktop\涂胶数据">hallo world</a>
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title> ES Service</title>
+        
+    <link rel="stylesheet" type="text/css" media="screen" href="/ccs/main.css">
+    <script src="/js/echarts.js"></script>
+    <script src="/js/index.js"></script>
+    </head>
+    <body>
+        <header>
+            
+            <h1>佛山分公司员工服务平台</h1>
+            <div id="showtime" class="showtime"></div>
+            <script>
+                var t = null;
+                t = setTimeout(time,1000);
+                function time(){
+                    clearTimeout(t);
+                    dt = new Date();
+                    var y = dt.getFullYear();
+                    var mt = dt.getMonth() + 1;
+                    var d = dt.getDate();
+                    var h = dt.getHours();
+                    var m = dt.getMinutes();
+                    var s = dt.getSeconds();
+                    document.querySelector(".showtime").innerHTML = "当前时间："
+                    + y +"年"+mt+"月"+d+"日"+"-"+h+"时"+m+"分"+s+"秒";
+                    
+                    t = setTimeout(time,1000);
+
+                }
+
+
+            </script>
+        </header>
+        <section class="mainbox">
+            <div class="column">
+                <div class="panel bar">
+                    <h2>月心声数量情况</h2>
+                    <div class="char">
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div id="app" class="panel lin">
+                     <h2>当月各个科室心声数</h2>
+                     <input type="button" value="test" @click = "getdata"> 
+                    <div class="char"></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel pie">
+                    <h2>当月心声类型</h2>
+                    <div class="char"></div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="no">
+                    <div class="no-hd" id="nohd" >
+                        <ul>
+                            <li>{{ydata}}</li>
+                            <li>{{mdata}}</li>
+                        </ul>
+                    </div>
+                    <div class="no-bd">
+                        <ul>
+                            <li>当年心声数量</li>
+                            <li>当月心声数量</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mainpanel">
+                    <div class="panel-footer"></div>    
+                        <h2>心声类型</h2>
+                    <div class="char"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="panel bar2">
+                    <h2>科室答复率情况</h2>
+                    <div class="char"></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel lin2"></router-link>">
+                    <h2>科室满意度得分</h2>
+                    <div class="char"></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel pie2">
+                    <h2>满意度分布</h2>
+                    <div class="char"></div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <script src="/js/index.js"></script>
+        <script src="/js/vue.js"></script>
+        <script src="/js/indexjs.js"></script>
+        <script src="/node_modules/axios/dist/axios.js"></script>
+
+    </body>
 </html>
