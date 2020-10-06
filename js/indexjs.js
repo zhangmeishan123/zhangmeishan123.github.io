@@ -74,7 +74,7 @@
                     series: [{
                         name: '心声数量',
                         type: 'bar',
-                        data: [5, 20, 36, 10, 10, 20,5, 20, 36, 0, 0, 0],
+                        data: [5, 20, 36, 10, 10, 20,5, 20, 36, 70, 0, 0],
                         barWidth:"45%",
                         itemStyle:{
                             barBorderRadius:5,
