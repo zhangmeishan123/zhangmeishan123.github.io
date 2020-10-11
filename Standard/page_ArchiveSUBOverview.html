@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>XPegasusWeb - Startseite</title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <link href="css/WebStylesStandard.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+  <!--
+  function FP_goToURL(url) {//v1.0 
+   document.Formular.action=url;
+   document.Formular.submit();
+  }
+  // Funktion: Wert erniedrigen
+  function decrement(){
+    var Number;
+    Number = parseInt(document.Formular.prg.value);
+    Number--;
+    document.Formular.prg.value = Number.toString();
+    return true;
+  }
+  // Funktion: Wert erhöhen
+  function increment(){
+    var Number;
+    Number = parseInt(document.Formular.prg.value);
+    Number++;
+    document.Formular.prg.value = Number.toString();
+    return true;
+  }
+  // Funktion: Gruppen- und Modulnamen zuweisen
+  function setNames(groupName,moduleName){
+    document.Formular.Groupname.value = groupName;
+    document.Formular.Modulename.value = moduleName;
+    document.getElementById('idModulegroup').value = groupName;
+    document.getElementById('idModulename').value = moduleName;
+    document.getElementById('idMenuButtons').style.visibility = 'visible';
+    return true;
+  }
+  //-->
+  </script>
+</head>
+
+<body>
+  <div class="mainDiv">
+  	<div class="topHWHDiv">
+  		<div class="subPageTitle"><strong>Archiv</strong></div>
+  		<div class="logoHWH">
+    		<a href="../index.html">
+    		<img src="pics/HWHLogo.png" alt="HWH-Logo.png" height="70px" />
+    		</a>
+  		</div>
+  	</div>
+  	<div class="mainFrameDiv">
+  		<div class="mainFrameLeftDiv">
+  			<div id="idMenuButtons" class="menuButtons">
+  		  	<form name="ButtonMenuTopForm" method="post">
+            <div class="menuButtonSub">
+        	   <input name="ButtonRefresh" class="refreshButtonLogbook" type="button" onclick="FP_goToURL(/*href*/'page_LbSUBOverview.html')" />
+        	  </div>
+        	  <input name="ButtonBack" class="buttonBack" type="button" onclick="FP_goToURL(/*href*/'page_Overall.html')" />
+        	</form>
+        </div>
+  		</div>
+  		<div class="mainFrameRightDiv">
+  			<div class="moduleChange">
+  				<div class="mainFrameModuleChangeGroupAndNameDiv">
+ 						<div class="mainFrameModuleChangeTextDiv">Modulgruppe</div>
+ 		  			<input class="mainFrameModuleChangeTextField" id="idModulegroup" name="Modulegroup" type="text" value="?HWH:ModuleGroup;" disabled="disabled" />
+ 						<div class="mainFrameModuleChangeTextDiv">Modulname</div>
+ 			  		<input class="mainFrameModuleChangeTextField" id="idModulename" name="Modulename" type="text" value="?HWH:ModuleName;" disabled="disabled" />
+   				</div>
+  	 			<input name="ButtonModuleChange" class="moduleChangeButton" type="button" onclick="FP_goToURL(/*href*/'index.html')" />
+  	  	</div>
+
+  			<div class="mainFrameRightTableArchiveDiv">
+    	  	<div style="clear:both">
+    	  	 ?HWH:Archive;
+    	  	</div>
+  	  	</div>
+  		</div>
+			<form name="Formular" action="" method="post" style="display:none">
+				<input type="hidden" name="Groupname" value="?HWH:ModuleGroup;" />
+				<input type="hidden" name="Modulename" value="?HWH:ModuleName;" />
+				<input type="hidden" name="Programindex" value="?HWH:ProgramIndex;" />
+			</form>
+  	</div>
+	</div>
+</body>
+
+</html>

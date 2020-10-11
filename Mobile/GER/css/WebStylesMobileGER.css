@@ -1,0 +1,122 @@
+﻿.mainDivMobile
+{
+  border: 1px;
+  border-style: solid;
+  position:absolute;
+  width: 220px;
+  height: 260px;
+  left:50%; 
+  top:50%; 
+  margin-left:-110px;
+  margin-top:-130px;
+}
+
+.mainDivMobileTop{
+ background-color:#004DFF;
+ height:40px;
+}
+
+/*****  Modul-Change  *****/
+.moduleChange{
+ float:right;
+ width:80px; height:40px; margin-right:10px; margin-top:4px;margin-bottom:10px;
+}
+.mainFrameModuleChangeGroupAndNameDiv{
+ width:80px;
+}
+.mainFrameModuleChangeTextField{
+ width:80px; height:9px;
+ font-size:xx-small;margin-bottom:2px;
+}
+
+
+.mainFramePrgChangeGroupAndNameDiv{
+ width:100px;font-size:xx-small;margin-left:5px; margin-top:4px;float:left;
+}
+.mainFramePrgChangeTextDiv{
+ font-size:xx-small;float:left;
+}
+input.mainFramePrgChangeButtonLeft{
+ width:15px; height:15px;float:left;background: url('../../ENG/pics/ButtonPicRight.png') no-repeat center center white;
+}
+input.mainFramePrgChangeTextField1{
+ font-size:xx-small;width:11px; height:9px;float:left;
+}
+input.mainFramePrgChangeButtonRight{
+ width:15px; height:15px;float:left;background: url('../../ENG/pics/ButtonPicLeft.png') no-repeat center center white;
+}
+.mainFramePrgChangeTextDiv{
+ font-size:xx-small;width:40px;float:left;margin-top:2px;
+}
+input.mainFramePrgChangeTextField2{
+ font-size:xx-small;width:54px;height:9px;margin-top:2px;
+}
+
+input.weldParamButton{
+  margin-top:20px;background: url('../../ENG/pics/ButtonPicWeldParameter.png') no-repeat center center white;
+	width:60px; height:30px;
+}
+input.currentValuesButton{
+  margin-top:20px;background: url('../../ENG/pics/ButtonPicMonitoring.png') no-repeat center center white;
+	width:60px; height:30px;
+}
+input.alarmButton{
+  margin-top:20px;background: url('../../ENG/pics/ButtonPicModuleMessages.png') no-repeat center center white;
+	width:60px; height:30px;
+}
+input.logbookButton{
+  margin-top:20px;background: url('../../ENG/pics/ButtonPicLB.png') no-repeat center center white;
+	width:60px; height:30px;
+}
+input.refreshButton{
+  margin-top:10px;margin-left:10px; background: url('../../ENG/pics/ButtonPicRefresh.png') no-repeat center center white;
+	width:40px; height:30px;float:right;
+}
+input.backButton{
+  margin-top:10px;margin-left:2px;margin-right:6px; background: url('../../ENG/pics/ButtonPicBack.png') no-repeat center center white;
+	width:40px; height:30px;float:right;
+}
+
+.title{
+ color:white;font-family:Arial, Helvetica, Sans-Serif;font-weight:bold;font-size:small;
+ margin:10px 0px 0px 0px;width:140px;float:left;text-align:center;
+}
+
+
+/*****  Schweißparameter  *****/
+.mainFrameWeldParamterLeftValues{
+  font-family:Arial, Helvetica, Sans-Serif; font-size:x-small;clear:both;
+  height:20px;
+}
+.mainFrameWeldParamterLeftName{
+  float:left; width:140px;text-align:left;
+}
+input.mainFrameWeldParamterLeftValue{
+  font-family:Arial, Helvetica, Sans-Serif; font-size:x-small;
+  width:20px;height:11px;float:left;
+ 
+}
+.mainFrameWeldParamterLeftUnit{
+  float:left; margin-left:2px;
+}
+    
+
+/*****  Logbuch  *****/
+.mainFrameRightTableLogbookDiv{
+ 	border:1px black solid;margin-left:10px;
+  width:200px; height:120px; overflow:scroll;
+}   	  	  
+
+table{
+ font-size:xx-small;
+}
+    	  	  
+    	  	  
+    	  	  
+    	  	  
+    	  	  
+    	  	  
+    	  	  
+    	  	  
+    	  	  
+    	  	  

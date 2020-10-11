@@ -1,0 +1,30 @@
+﻿body{
+  font-family:Arial, Helvetica, Sans-Serif; font-weight:normal; font-size:x-small;
+}
+img{
+  width:15px; height:12px; vertical-align:middle; float:left;
+}
+img.PicNode{
+  height:14px;
+}
+img.PicVertModuleLast{
+  height:16px;
+}
+p{
+  height:12px;
+}
+
+.iframeInnerDiv{
+  margin-left:5px; margin-top:10px;min-width:160px;
+}
+.NameGroup{
+  margin:0px 0px 2px 0px;width:130px; white-space:nowrap;
+}
+.NameModule{
+  margin:0px 0px 0px 0px;width:40px;white-space:nowrap;
+}
+.NameModuleLast{
+  margin:0px 0px 4px 0px;width:110px;white-space:nowrap;
+}
+
+/* margin:4px 0px 3px 0px; */

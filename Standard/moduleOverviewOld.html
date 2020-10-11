@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="de" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>ModuleOverview</title>
+<link href="css/WebStylesModuleOverview.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function ChangePic(Group,Group1,GroupModules,GroupPicName) {
+	var Test;
+	if(document.getElementById(Group).value == "Plus_Top"){
+		GroupPicName = GroupPicName + ".png";
+		window.document.images[Group].src = "pics/Overview_Minus_Top.png";
+		document.getElementById(Group).value = "Minus_Top";
+		// Alles einblenden
+		document.getElementById(GroupModules).style.display="block";
+	}// if
+	else if(document.getElementById(Group).value == "Minus_Top"){
+		GroupPicName = GroupPicName + "-Closed.png";
+  	window.document.images[Group].src = "pics/Overview_Plus_Top.png";
+  	document.getElementById(Group).value = "Plus_Top";
+  	// Alles ausblenden
+  	document.getElementById(GroupModules).style.display="none";
+	}// else if
+	else if(document.getElementById(Group).value == "Plus"){
+		GroupPicName = GroupPicName + ".png";
+		window.document.images[Group].src = "pics/Overview_Minus.png";
+		document.getElementById(Group).value = "Minus";
+		// Alles einblenden
+		document.getElementById(GroupModules).style.display="block";
+	}// else if
+	else if(document.getElementById(Group).value == "Minus"){
+		GroupPicName = GroupPicName + "-Closed.png";
+  	window.document.images[Group].src = "pics/Overview_Plus.png";
+  	document.getElementById(Group).value = "Plus";
+  	// Alles ausblenden
+  	document.getElementById(GroupModules).style.display="none";
+	}// else if
+	else if(document.getElementById(Group).value == "Plus_End"){
+		GroupPicName = GroupPicName + ".png";
+		window.document.images[Group].src = "pics/Overview_Minus_End.png";
+		document.getElementById(Group).value = "Minus_End";
+		// Alles einblenden
+		document.getElementById(GroupModules).style.display="block";
+	}// else if
+	else if(document.getElementById(Group).value == "Minus_End"){
+		GroupPicName = GroupPicName + "-Closed.png";
+  	window.document.images[Group].src = "pics/Overview_Plus_End.png";
+  	document.getElementById(Group).value = "Plus_End";
+  	// Alles ausblenden
+  	document.getElementById(GroupModules).style.display="none";
+	}// else if
+	window.document.images[Group1].src = GroupPicName;
+}
+</script>
+</head>
+
+<body>
+<div class="iframeDiv" style="white-space:nowrap">
+  <div class="iframeInnerDiv" ><!--style="width:350px"-->
+  
+  
+    <input id="Group1" value="Plus_Top" type="hidden" />
+    <img class="PicNode" alt="" name="Group1" src="pics/Overview_Plus_Top.png" onclick="ChangePic('Group1','Group11','Group1Modules','pics/Icon_ModuleGroup_Offline')" />
+    <img class="PicNode" name="Group11" alt="" src="pics/Icon_ModuleGroup_Offline-Closed.png" />
+    <div class="NameGroup">Gruppe_1</div>
+    <div id="Group1Modules" style="display:none">
+      <img alt="" src="pics/Overview_VertSolid.png" />
+      <img alt="" src="pics/Overview_Module_Zweig.png" />
+      <img alt="" src="pics/Icon_Module_Offline.png" />
+      <p class="NameModule">Modul_1.1</p>
+      <img alt="" src="pics/Overview_VertSolid.png" />
+      <img alt="" src="pics/Overview_Module_Zweig.png" />
+      <img alt="" src="pics/Icon_Module_Online.png" />
+      <p class="NameModule">Modul_1.2</p>
+      <img class="PicVertModuleLast" alt="" src="pics/Overview_VertSolidModuleLast.png" />
+      <img alt="" src="pics/Overview_Module_End.png" />
+      <img alt="" src="pics/Icon_Module_Online.png" />
+      <p class="NameModuleLast"><a href="">Modul_1.3</a></p>
+    </div>
+    
+    <input id="Group2" value="Plus" type="hidden" />
+    <img class="PicNode" alt="" name="Group2" src="pics/Overview_Plus.png" onclick="ChangePic('Group2','Group21','Group2Modules','pics/Icon_ModuleGroup_Online')" />
+    <img class="PicNode" name="Group21" alt="" src="pics/Icon_ModuleGroup_Online-Closed.png" />
+    <div class="NameGroup">Gruppe_2</div>
+    <div id="Group2Modules" style="display:none">
+      <img class="PicVertModuleLast" alt="" src="pics/Overview_VertSolidModuleLast.png" />
+      <img alt="" src="pics/Overview_Module_End.png" />
+      <img alt="" src="pics/Icon_Module_Online.png" />
+      <p class="NameModuleLast"><a href="">Modul_2.1</a></p>
+    </div>
+    
+    <input id="Group3" value="Plus" type="hidden" />
+    <img class="PicNode" alt="" name="Group3" src="pics/Overview_Plus.png" onclick="ChangePic('Group3','Group31','Group3Modules','pics/Icon_ModuleGroup_Error')" />
+    <img class="PicNode" name="Group31" alt="" src="pics/Icon_ModuleGroup_Error-Closed.png" />
+    <div class="NameGroup">Gruppe_3</div>
+    <div id="Group3Modules" style="display:none">
+      <img alt="" src="pics/Overview_VertSolid.png" />
+      <img alt="" src="pics/Overview_Module_Zweig.png" />
+      <img alt="" src="pics/Icon_Module_Offline.png" />
+      <p class="NameModule"><a href="">Modul_3.1</a></p>
+      <img alt="" src="pics/Overview_VertSolid.png" />
+      <img alt="" src="pics/Overview_Module_Zweig.png" />
+      <img alt="" src="pics/Icon_Module_Error.png" />
+      <p class="NameModule"><a href="">Modul_3.2</a></p>
+      <img class="PicVertModuleLast" alt="" src="pics/Overview_VertSolidModuleLast.png" />
+      <img alt="" src="pics/Overview_Module_End.png" />
+      <img alt="" src="pics/Icon_Module_Online.png" />
+      <p class="NameModuleLast"><a href="">Modul_3.3</a></p>
+    </div>
+    
+    <input id="Group4" value="Plus_End" type="hidden" />
+    <img class="PicNode" alt="" name="Group4" src="pics/Overview_Plus_End.png" onclick="ChangePic('Group4','Group41','Group4Modules','pics/Icon_ModuleGroup_Error')" />
+    <img class="PicNode" name="Group41" alt="" src="pics/Icon_ModuleGroup_Error-Closed.png" />
+    <div class="NameGroup">123gdfgfdgdf327890</div>
+    <div id="Group4Modules" style="display:none">
+      <img alt="" src="pics/Overview_Blank.png" />
+      <img alt="" src="pics/Overview_Module_Zweig.png" />
+      <img alt="" src="pics/Icon_Module_Offline.png" />
+      <p class="NameModule">Geni65686ng</p>
+      <img alt="" src="pics/Overview_Blank.png" />
+      <img alt="" src="pics/Overview_Module_End.png" />
+      <img alt="" src="pics/Icon_Module_Error.png" />
+      <p class="NameModuleLast"><a href="">Modul_4.2</a></p>
+    </div>
+    
+    
+  </div>
+</div>
+
+</body>
+
+</html>

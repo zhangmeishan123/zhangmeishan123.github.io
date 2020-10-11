@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="../../css/WebStyles.css" rel="stylesheet" type="text/css" />
+<link href="css/WebStylesMobileENG.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function FP_goToURL(url) {//v1.0
+   document.Formular.action=url;
+   document.Formular.submit();
+}
+// Funktion: Wert erniedrigen
+function decrement(){
+  var Number;
+  Number = parseInt(document.Formular.Programindex.value);
+  if(Number == 1){
+  	return true;
+  }
+  Number--;
+  document.Formular.Programindex.value = Number.toString();
+  return true;
+}
+// Funktion: Wert erhöhen
+function increment(){
+  var Number;
+  Number = parseInt(document.Formular.Programindex.value);
+  if(Number == 10){
+  	return true;
+  }
+  Number++;
+  document.Formular.Programindex.value = Number.toString();
+  return true;
+}
+//-->
+</script>
+</head>
+
+<body>
+	<div class="mainDivMobile">
+		<div class="mainDivMobileTop">
+			<div class="title">Inspector - I</div>
+	  	<div style="float:right;margin:6px 6px 0px 0px;">
+	  	  <a href="../../index.html">
+			    <img alt="" src="../pics/HWHLogo.png" height="26px" style="border:0px;"/>
+			  </a>
+			</div>
+		</div>
+ 		<div class="mainFrameMobile">  
+ 		
+ 		  			<div class="prgChange">
+  				<div class="mainFramePrgChangeGroupAndNameDiv">
+ 						<div class="mainFramePrgChangeTextDiv" >Prg. sel.</div>
+ 		  			<input class="mainFramePrgChangeButtonLeft" onclick="decrement();FP_goToURL(/*href*/'page_WeldParameterSUBOverview.html');" id="idButtonDown" name="Modulegroup" type="button" />
+ 		  			<input class="mainFramePrgChangeTextField1"  id="idModulegroup" name="Modulegroup" type="text" value="?HWH:ProgramIndex;" />
+ 		  			<input class="mainFramePrgChangeButtonRight" onclick="increment();FP_goToURL(/*href*/'page_WeldParameterSUBOverview.html');" id="idButtonUp" name="Modulegroup" type="button" />
+ 						<div class="mainFramePrgChangeTextDiv" style="clear:both;">Prg. name</div>
+ 			  		<input class="mainFramePrgChangeTextField2" id="idModulename" name="Modulename" type="text" value="?HWH:ProgramName;" />
+   				</div>
+  	  	</div>
+
+  		<div class="moduleChange">
+  			<div class="mainFrameModuleChangeGroupAndNameDiv">
+    			<input class="mainFrameModuleChangeTextField" id="idModulegroup" name="Modulegroup" type="text" value="?HWH:ModuleGroup;" disabled="disabled" />
+  	  		<input class="mainFrameModuleChangeTextField" id="idModulename" name="Modulename" type="text" value="?HWH:ModuleName;" disabled="disabled" />
+ 				</div>
+  		</div>
+  		<div style="clear:both;text-align:center;margin-left:20px;">
+  		<div style="font-family:Arial, Helvetica, Sans-Serif;font-size:small;text-align:left;font-weight:bold;margin-bottom:10px;">
+         Actual Values</div>
+    		<div class="mainFrameWeldParamterLeft" style="float:left">
+    	  	<div class="mainFrameWeldParamterLeftValues">
+    	  	  <div class="mainFrameWeldParamterLeftName">?HWH_ID:14181:Name;</div>
+    	 			<input class="mainFrameWeldParamterLeftValue" id="id150Value" name="ParamValue" type="text" value="?HWH_ID:14181:Value;" />
+    	  	  <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:14181:Unit;</div>
+    	  	</div>
+    	  	<div class="mainFrameWeldParamterLeftValues">
+    	  	  <div class="mainFrameWeldParamterLeftName">?HWH_ID:14182:Name;</div>
+    	 			<input class="mainFrameWeldParamterLeftValue" id="id150Value" name="ParamValue" type="text" value="?HWH_ID:14182:Value;" />
+    	  	  <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:14182:Unit;</div>
+    	  	</div>
+    	  	<div class="mainFrameWeldParamterLeftValues">
+    	  	  <div class="mainFrameWeldParamterLeftName">?HWH_ID:14185:Name;</div>
+    	 			<input class="mainFrameWeldParamterLeftValue" id="id150Value" name="ParamValue" type="text" value="?HWH_ID:14185:Value;" />
+    	  	  <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:14185:Unit;</div>
+    	  	</div>
+    	  	<div class="mainFrameWeldParamterLeftValues">
+    	  	  <div class="mainFrameWeldParamterLeftName">?HWH_ID:14186:Name;</div>
+    	 			<input class="mainFrameWeldParamterLeftValue" id="id150Value" name="ParamValue" type="text" value="?HWH_ID:14186:Value;" />
+    	  	  <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:14186:Unit;</div>
+    	  	</div>
+    	  </div>
+    	  <div class="mainFrameWeldParamterRight" style="float:left">
+    	  </div>
+        <input name="ButtonBack" class="backButton" type="button" onclick="FP_goToURL(/*href*/'index.html')" />
+        <input name="ButtonBack" class="refreshButton" type="button" onclick="FP_goToURL(/*href*/'page_MonitoringSUBCurrent.html')" />
+  			<form name="Formular" action="" method="post" style="display:none">
+  				<input type="hidden" name="Groupname" value="?HWH:ModuleGroup;" />
+  				<input type="hidden" name="Modulename" value="?HWH:ModuleName;" />
+  				<input type="hidden" name="Programindex" value="?HWH:ProgramIndex;" />
+  			</form>
+  		</div>
+		</div>
+	</div>
+</body>
+
+</html>

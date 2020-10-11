@@ -1,0 +1,56 @@
+﻿.mainDiv
+{
+  border: 1px;
+  border-style: solid;
+  background: url('../pics/Startseite-Schriftzug.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: white;
+  position:absolute;
+  width: 220px;
+  height: 260px;
+  left:50%; 
+  top:50%; 
+  margin-left:-110px;
+  margin-top:-130px;
+}
+
+.buttonDiv
+{
+  width: 90px;
+  height: 40px;
+  margin-top: 160px;
+  margin-left: 65px;
+  text-align:center;
+}
+
+.buttons
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  width: 70px;
+  height: 40px;
+  margin-right: 10px;
+  float: left;
+}
+
+input.ButtonGER{
+  border: 1px;
+  border-style: solid;
+  background: url('../pics/GER.gif');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: white;
+  height:22px; width:32px;
+
+  
+}
+input.ButtonENG{
+  border: 1px;
+  border-style: solid;
+  background: url('../pics/UK.gif');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: white;
+  height:22px; width:32px;
+  margin-left:2px;
+}

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="de" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>ModuleOverview</title>
+<link href="css/WebStylesModuleOverview.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function ChangePic(Group,Group1,GroupModules,GroupPicName) {
+	var Test;
+	if(document.getElementById(Group).value == "Plus_Top_Solo"){
+		GroupPicName = GroupPicName + ".png";
+		window.document.images[Group].src = "pics/Overview_Minus_Top_Solo.png";
+		document.getElementById(Group).value = "Minus_Top_Solo";
+		// Alles einblenden
+		document.getElementById(GroupModules).style.display="block";
+	}// if
+	else if(document.getElementById(Group).value == "Minus_Top_Solo"){
+		GroupPicName = GroupPicName + "-Closed.png";
+  	window.document.images[Group].src = "pics/Overview_Plus_Top_Solo.png";
+  	document.getElementById(Group).value = "Plus_Top_Solo";
+  	// Alles ausblenden
+  	document.getElementById(GroupModules).style.display="none";
+	}// else if
+  else if(document.getElementById(Group).value == "Plus_Top"){
+		GroupPicName = GroupPicName + ".png";
+		window.document.images[Group].src = "pics/Overview_Minus_Top.png";
+		document.getElementById(Group).value = "Minus_Top";
+		// Alles einblenden
+		document.getElementById(GroupModules).style.display="block";
+	}// else if
+	else if(document.getElementById(Group).value == "Minus_Top"){
+		GroupPicName = GroupPicName + "-Closed.png";
+  	window.document.images[Group].src = "pics/Overview_Plus_Top.png";
+  	document.getElementById(Group).value = "Plus_Top";
+  	// Alles ausblenden
+  	document.getElementById(GroupModules).style.display="none";
+	}// else if
+	else if(document.getElementById(Group).value == "Plus"){
+		GroupPicName = GroupPicName + ".png";
+		window.document.images[Group].src = "pics/Overview_Minus.png";
+		document.getElementById(Group).value = "Minus";
+		// Alles einblenden
+		document.getElementById(GroupModules).style.display="block";
+	}// else if
+	else if(document.getElementById(Group).value == "Minus"){
+		GroupPicName = GroupPicName + "-Closed.png";
+  	window.document.images[Group].src = "pics/Overview_Plus.png";
+  	document.getElementById(Group).value = "Plus";
+  	// Alles ausblenden
+  	document.getElementById(GroupModules).style.display="none";
+	}// else if
+	else if(document.getElementById(Group).value == "Plus_End"){
+		GroupPicName = GroupPicName + ".png";
+		window.document.images[Group].src = "pics/Overview_Minus_End.png";
+		document.getElementById(Group).value = "Minus_End";
+		// Alles einblenden
+		document.getElementById(GroupModules).style.display="block";
+	}// else if
+	else if(document.getElementById(Group).value == "Minus_End"){
+		GroupPicName = GroupPicName + "-Closed.png";
+  	window.document.images[Group].src = "pics/Overview_Plus_End.png";
+  	document.getElementById(Group).value = "Plus_End";
+  	// Alles ausblenden
+  	document.getElementById(GroupModules).style.display="none";
+	}// else if
+	window.document.images[Group1].src = GroupPicName;
+}
+// Funktion: Gruppen- und Modulnamen zuweisen
+function setNames(groupName,moduleName){
+  parent.setNames(groupName,moduleName);
+}
+-->
+</script>
+</head>
+
+<body>
+<div class="iframeDiv" style="white-space:nowrap">
+  <div class="iframeInnerDiv" ><!--style="width:350px"-->
+
+?HWH:ModuleOverview;
+
+  </div>
+</div>
+
+</body>
+
+</html>

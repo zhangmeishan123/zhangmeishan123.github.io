@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>XPegasusWeb - Startseite</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="css/WebStylesStandardENG.css" rel="stylesheet"
+      type="text/css">
+    <script type="text/javascript">
+  <!--
+  function FP_goToURL(url) {//v1.0 
+   document.Formular.action=url;
+   document.Formular.submit();
+  }
+  // Funktion: Wert erniedrigen
+  function decrement(){
+    var Number;
+    Number = parseInt(document.Formular.Programindex.value);
+    if(Number == 1){
+    	return true;
+    }
+    Number--;
+    document.Formular.Programindex.value = Number.toString();
+    return true;
+  }
+  // Funktion: Wert erhöhen
+  function increment(){
+    var Number;
+    Number = parseInt(document.Formular.Programindex.value);
+    if(Number == 10){
+    	return true;
+    }
+    Number++;
+    document.Formular.Programindex.value = Number.toString();
+    return true;
+  }
+  // Funktion: Gruppen- und Modulnamen zuweisen
+  function setNames(groupName,moduleName){
+    document.Formular.Groupname.value = groupName;
+    document.Formular.Modulename.value = moduleName;
+    document.getElementById('idModulegroup').value = groupName;
+    document.getElementById('idModulename').value = moduleName;
+    document.getElementById('idMenuButtons').style.visibility = 'visible';
+    return true;
+  }
+  //-->
+  </script>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <div class="topHWHDiv">
+        <div class="subPageTitle"><strong>Welding&nbsp;parameter&nbsp;-&nbsp;overview</strong></div>
+        <div class="logoHWH"> <a href="../../index.html"> <img
+              src="../pics/HWHLogo.png" alt="HWH-Logo.png" height="70px">
+          </a> </div>
+      </div>
+      <div class="mainFrameDiv">
+        <div class="mainFrameLeftDiv">
+          <div id="idMenuButtons" class="menuButtons">
+            <form name="ButtonMenuTopForm" method="post">
+              <div class="menuButtonSub"> <input
+                  name="ButtonParamSUBOverview"
+                  class="weldParamButtonSUBOverviewPressed"
+                  onclick="FP_goToURL(/*href*/'page_WeldParameterSUBOverview.html')"
+                  type="button">&nbsp;&nbsp;&nbsp; </div>
+              <input name="ButtonBack" class="buttonBack"
+                onclick="FP_goToURL(/*href*/'page_Overall.html')"
+                type="button"> </form>
+          </div>
+        </div>
+        <div class="mainFrameRightDiv">
+          <div class="prgChange">
+            <div class="mainFramePrgChangeGroupAndNameDiv">
+              <div class="mainFramePrgChangeTextDiv">Program&nbsp;selection</div>
+              <input class="mainFramePrgChangeButtonLeft"
+onclick="decrement();FP_goToURL(/*href*/'page_WeldParameterSUBOverview.html');"
+                id="idButtonDown" name="Modulegroup" type="button"> <input
+                class="mainFramePrgChangeTextField1" id="idModulegroup"
+                name="Modulegroup" value="?HWH:ProgramIndex;"
+                type="text"> <input
+                class="mainFramePrgChangeButtonRight"
+onclick="increment();FP_goToURL(/*href*/'page_WeldParameterSUBOverview.html');"
+                id="idButtonUp" name="Modulegroup" type="button">
+              <div class="mainFramePrgChangeTextDiv" style="clear:both;">Program&nbsp;name</div>
+              <input class="mainFramePrgChangeTextField2"
+                id="idModulename" name="Modulename"
+                value="?HWH:ProgramName;" type="text"> </div>
+          </div>
+          <div class="moduleChange">
+            <div class="mainFrameModuleChangeGroupAndNameDiv">
+              <div class="mainFrameModuleChangeTextDiv">Module&nbsp;group</div>
+              <input class="mainFrameModuleChangeTextField"
+                id="idModulegroup" name="Modulegroup"
+                value="?HWH:ModuleGroup;" disabled="disabled"
+                type="text">
+              <div class="mainFrameModuleChangeTextDiv">Module&nbsp;name</div>
+              <input class="mainFrameModuleChangeTextField"
+                id="idModulename" name="Modulename"
+                value="?HWH:ModuleName;" disabled="disabled" type="text">
+            </div>
+          </div>
+          <div style="clear:both">
+            <div class="mainFrameWeldParamterLeft" style="float:left">
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:150:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:150:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:150:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:151:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:151:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:151:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:3510:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:3510:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:3510:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:189:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:189:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:189:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:190:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:190:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:190:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:181:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:181:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:181:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:3511:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:3511:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:3511:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:14051:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:14051:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:14051:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:194:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:194:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:194:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:195:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:195:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:195:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:183:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:183:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:183:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:182:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:182:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:182:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:191:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:191:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:191:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:3512:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:3512:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:3512:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:192:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:192:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:192:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:152:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:152:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:152:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:153:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:153:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:153:Unit;</div>
+              </div>
+            </div>
+            <div class="mainFrameWeldParamterRight" style="float:left">
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:14087:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:14087:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:14087:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:63:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:63:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:63:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:159:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:159:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:159:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:160:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:160:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:160:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:161:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:161:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:161:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:162:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:162:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:162:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:2:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:2:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:2:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:1:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:1:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:1:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:14049:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:14049:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:14049:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:14009:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:14009:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:14009:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:4:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:4:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:4:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:14090:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:14090:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:14090:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:14091:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:14091:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:14091:Unit;</div>
+              </div>
+              <div class="mainFrameWeldParamterLeftValues">
+                <div class="mainFrameWeldParamterLeftName">?HWH_ID:14092:Name;</div>
+                <input class="mainFrameWeldParamterLeftValue"
+                  id="id150Value" name="ParamValue"
+                  value="?HWH_ID:14092:Value;" type="text">
+                <div class="mainFrameWeldParamterLeftUnit">?HWH_ID:14092:Unit;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form name="Formular" action="" method="post"
+          style="display:none"> <input name="Groupname"
+            value="?HWH:ModuleGroup;" type="hidden"> <input
+            name="Modulename" value="?HWH:ModuleName;" type="hidden"> <input
+            name="Programindex" value="?HWH:ProgramIndex;" type="hidden">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

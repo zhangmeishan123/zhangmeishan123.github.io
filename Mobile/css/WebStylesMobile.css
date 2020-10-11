@@ -1,0 +1,36 @@
+﻿.mainDivMobile
+{
+  border: 1px;
+  border-style: solid;
+  position:absolute;
+  width: 220px;
+  height: 260px;
+  left:50%; 
+  top:50%; 
+  margin-left:-110px;
+  margin-top:-130px;
+}
+
+.mainDivMobileTop{
+ background-color:#004DFF;
+ height:40px;
+}
+
+/*****  Modul-Change  *****/
+.moduleChange{
+ float:right;
+ width:80px; height:40px; margin-right:10px; margin-top:4px;
+}
+.mainFrameModuleChangeGroupAndNameDiv{
+ width:80px;
+}
+.mainFrameModuleChangeTextField{
+ width:80px; height:11px;
+ font-size:xx-small;
+}
+
+input.weldParamButton{
+  margin-top:20px;background: url('../GER/pics/ButtonPicWeldParameter.png') no-repeat center center white;
+	width:120px; height:60px; border-style:none;
+
+}
